@@ -1,0 +1,22 @@
+sum = 0
+n = int(input("Input a number: "))
+if n > 0 :
+  i = n
+  while i > 0:
+    a = i%10
+    i //= 10
+    sum += a
+  if sum < 10 :
+    print(sum) 
+  else :
+    while True :
+      if sum < 10 :
+        break
+      else :
+        i = sum
+        sum = 0
+        while i > 0:
+          a = i%10
+          i //= 10
+          sum += a
+    print(sum)
